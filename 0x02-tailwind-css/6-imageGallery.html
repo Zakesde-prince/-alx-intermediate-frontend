@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Image Gallery</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Responsive fallback -->
+  <style>
+    @media (max-width: 768px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body class="p-4">
+  <!-- Header -->
+  <header class="bg-blue-500 text-white p-4">
+    <h1 class="text-3xl">Responsive Image Gallery</h1>
+  </header>
+
+  <!-- Main Content -->
+  <main class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4 min-h-screen">
+    <!-- Section with Flex Items -->
+    <section class="lg:col-span-2 flex">
+      <div class="w-1/2 bg-red-200 p-4">Flexbox Item 1</div>
+      <div class="w-1/2 bg-red-400 p-4">Flexbox Item 2</div>
+    </section>
+
+    <!-- Sidebar -->
+    <aside class="bg-green-200 p-4">Sidebar</aside>
+  </main>
+
+  <!-- 👇 Image Gallery Section -->
+  <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-8">
+    <img src="https://via.placeholder.com/300" alt="Image 1" class="w-full h-auto rounded-lg shadow" />
+    <img src="https://via.placeholder.com/300" alt="Image 2" class="w-full h-auto rounded-lg shadow" />
+    <img src="https://via.placeholder.com/300" alt="Image 3" class="w-full h-auto rounded-lg shadow" />
+    <img src="https://via.placeholder.com/300" alt="Image 4" class="w-full h-auto rounded-lg shadow" />
+    <img src="https://via.placeholder.com/300" alt="Image 5" class="w-full h-auto rounded-lg shadow" />
+    <img src="https://via.placeholder.com/300" alt="Image 6" class="w-full h-auto rounded-lg shadow" />
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white p-4 mt-4">
+    <p>&copy; 2024 John Doe's Blog</p>
+  </footer>
+</body>
+</html>
