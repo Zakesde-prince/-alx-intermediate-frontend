@@ -1,0 +1,13 @@
+// 3-main.scss
+@import 'variables';
+@import 'buttons';
+
+body {
+  font-family: $font-stack;
+  background-color: #f0f0f0;
+  padding: 2rem;
+}
+
+h1 {
+  color: $primary-color;
+}
