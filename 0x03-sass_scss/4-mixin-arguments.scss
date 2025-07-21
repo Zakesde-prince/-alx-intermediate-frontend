@@ -1,0 +1,14 @@
+@mixin margin-maker($top, $right, $bottom, $left) {
+  margin-top: $top;
+  margin-right: $right;
+  margin-bottom: $bottom;
+  margin-left: $left;
+}
+
+.margin-small {
+  @include margin-maker(5px, 5px, 5px, 5px);
+}
+
+.margin-large {
+  @include margin-maker(20px, 30px, 20px, 30px);
+}
