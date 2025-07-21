@@ -1,0 +1,17 @@
+.button, .secondary-btn, .primary-btn {
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.primary-btn {
+  background-color: green;
+}
+
+.secondary-btn {
+  background-color: gray;
+}
+
+/*# sourceMappingURL=5-extend.css.map */

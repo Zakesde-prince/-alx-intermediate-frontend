@@ -1,0 +1,17 @@
+.button {
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.primary-btn {
+  @extend .button;
+  background-color: green;
+}
+
+.secondary-btn {
+  @extend .button;
+  background-color: gray;
+}
