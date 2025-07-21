@@ -1,0 +1,19 @@
+.button-base, .button-secondary, .button-primary {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button-primary {
+  background-color: #3498db;
+  color: white;
+}
+
+.button-secondary {
+  background-color: #95a5a6;
+  color: white;
+}
+
+/*# sourceMappingURL=6-extend.css.map */

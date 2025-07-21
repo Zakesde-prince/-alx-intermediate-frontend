@@ -1,0 +1,21 @@
+// Base button style
+.button-base {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+// Reuse base button styles with different themes
+.button-primary {
+  @extend .button-base;
+  background-color: #3498db;
+  color: white;
+}
+
+.button-secondary {
+  @extend .button-base;
+  background-color: #95a5a6;
+  color: white;
+}

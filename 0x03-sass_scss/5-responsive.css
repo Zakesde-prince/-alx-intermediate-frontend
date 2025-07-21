@@ -1,0 +1,23 @@
+.container {
+  width: 100%;
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+.container h1 {
+  font-size: 2rem;
+  color: #2c3e50;
+}
+.container p {
+  font-size: 1rem;
+  color: #7f8c8d;
+}
+@media (max-width: 768px) {
+  .container h1 {
+    font-size: 1.5rem;
+  }
+  .container p {
+    font-size: 0.9rem;
+  }
+}
+
+/*# sourceMappingURL=5-responsive.css.map */
