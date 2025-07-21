@@ -1,0 +1,18 @@
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.col-1 {
+  width: 33.3333333333%;
+}
+
+.col-2 {
+  width: 66.6666666667%;
+}
+
+.col-3 {
+  width: 100%;
+}
+
+/*# sourceMappingURL=6-control_directives.css.map */

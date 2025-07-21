@@ -1,0 +1,20 @@
+$theme: dark;
+
+body {
+  @if $theme == light {
+    background-color: #fff;
+    color: #000;
+  } @else if $theme == dark {
+    background-color: #000;
+    color: #fff;
+  } @else {
+    background-color: gray;
+    color: black;
+  }
+}
+
+@for $i from 1 through 3 {
+  .col-#{$i} {
+    width: 100% / 3 * $i;
+  }
+}
