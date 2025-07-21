@@ -1,0 +1,12 @@
+@mixin button-styles {
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button {
+  @include button-styles;
+}
