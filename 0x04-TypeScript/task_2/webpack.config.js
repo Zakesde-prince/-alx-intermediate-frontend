@@ -2,14 +2,14 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: 'development',
   entry: './js/main.ts',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
+    clean: true,
   },
   resolve: {
-    extensions: ['.ts', '.js'], // So Webpack can resolve .ts files
+    extensions: ['.ts', '.js'],
   },
   module: {
     rules: [
@@ -22,7 +22,8 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './index.html', // Make sure this file exists
+      template: './index.html',
     }),
   ],
+  mode: 'development',
 };
