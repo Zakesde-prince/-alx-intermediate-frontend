@@ -14,9 +14,9 @@
 /*!********************!*\
   !*** ./js/main.ts ***!
   \********************/
-/***/ ((__unused_webpack_module, exports) => {
+/***/ (() => {
 
-eval("{\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.Teacher = exports.Director = void 0;\nexports.createEmployee = createEmployee;\n// 2. Implement the Director class\nvar Director = /** @class */ (function () {\n    function Director() {\n    }\n    Director.prototype.workFromHome = function () {\n        return 'Working from home';\n    };\n    Director.prototype.getCoffeeBreak = function () {\n        return 'Getting a coffee break';\n    };\n    Director.prototype.workDirectorTasks = function () {\n        return 'Getting to director tasks';\n    };\n    return Director;\n}());\nexports.Director = Director;\n// 3. Implement the Teacher class\nvar Teacher = /** @class */ (function () {\n    function Teacher() {\n    }\n    Teacher.prototype.workFromHome = function () {\n        return 'Cannot work from home';\n    };\n    Teacher.prototype.getCoffeeBreak = function () {\n        return 'Cannot have a break';\n    };\n    Teacher.prototype.workTeacherTasks = function () {\n        return 'Getting to work';\n    };\n    return Teacher;\n}());\nexports.Teacher = Teacher;\n// 4. createEmployee function\nfunction createEmployee(salary) {\n    if (typeof salary === 'number' && salary < 500) {\n        return new Teacher();\n    }\n    return new Director();\n}\n// 5. Example usage\nconsole.log(createEmployee(200)); // Teacher\nconsole.log(createEmployee(1000)); // Director\nconsole.log(createEmployee('$500')); // Director\n\n\n//# sourceURL=webpack://task_2/./js/main.ts?\n}");
+eval("{\n// Task 5: Classes\nvar Director = /** @class */ (function () {\n    function Director() {\n    }\n    Director.prototype.workFromHome = function () {\n        return 'Working from home';\n    };\n    Director.prototype.getCoffeeBreak = function () {\n        return 'Getting a coffee break';\n    };\n    Director.prototype.workDirectorTasks = function () {\n        return 'Getting to director tasks';\n    };\n    return Director;\n}());\nvar Teacher = /** @class */ (function () {\n    function Teacher() {\n    }\n    Teacher.prototype.workFromHome = function () {\n        return 'Cannot work from home';\n    };\n    Teacher.prototype.getCoffeeBreak = function () {\n        return 'Cannot have a break';\n    };\n    Teacher.prototype.workTeacherTasks = function () {\n        return 'Getting to work';\n    };\n    return Teacher;\n}());\n// Task 5: Function createEmployee\nfunction createEmployee(salary) {\n    if (typeof salary === 'number' && salary < 500) {\n        return new Teacher();\n    }\n    return new Director();\n}\n// Task 6: Type predicate\nfunction isDirector(employee) {\n    return employee instanceof Director;\n}\n// Task 6: Function executeWork\nfunction executeWork(employee) {\n    if (isDirector(employee)) {\n        return employee.workDirectorTasks();\n    }\n    else {\n        return employee.workTeacherTasks();\n    }\n}\n// Task 6: Expected result\nconsole.log(executeWork(createEmployee(200))); // Getting to work\nconsole.log(executeWork(createEmployee(1000))); // Getting to director tasks\n\n\n//# sourceURL=webpack://task_2/./js/main.ts?\n}");
 
 /***/ })
 
@@ -27,7 +27,7 @@ eval("{\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexp
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
 /******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./js/main.ts"](0, __webpack_exports__);
+/******/ 	__webpack_modules__["./js/main.ts"]();
 /******/ 	
 /******/ })()
 ;
