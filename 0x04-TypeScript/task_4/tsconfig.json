@@ -1,13 +1,12 @@
 {
   "compilerOptions": {
     "target": "ES6",
-    "module": "ESNext",
+    "module": "none",
     "strict": true,
-    "esModuleInterop": true,
-    "moduleResolution": "node",
     "outDir": "./dist",
     "rootDir": "./js",
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "noEmitOnError": true
   },
   "include": ["js/**/*"]
 }
